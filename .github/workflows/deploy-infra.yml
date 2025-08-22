@@ -16,6 +16,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Set up AWS profile "webapp"
+      run: |
+        aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }} --profile webapp
+        aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }} --profile webapp
+        aws configure set region ${{ env.AWS_REGION }} --profile webapp
+
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
       with:
