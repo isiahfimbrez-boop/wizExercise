@@ -1,0 +1,48 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "elasticloadbalancing:*",
+                "ec2:DescribeAccountAttributes",
+                "ec2:DescribeAddresses",
+                "ec2:DescribeInternetGateways",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeInstances",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:CreateTags",
+                "ec2:DeleteTags",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "iam:CreateServiceLinkedRole",
+                "cognito-idp:DescribeUserPoolClient",
+                "waf-regional:GetWebACLForResource",
+                "waf-regional:GetWebACL",
+                "waf-regional:AssociateWebACL",
+                "waf-regional:DisassociateWebACL",
+                "tag:GetResources",
+                "tag:TagResources",
+                "tag:UntagResources",
+                "wafv2:GetWebACLForResource",
+                "wafv2:GetWebACL",
+                "wafv2:AssociateWebACL",
+                "wafv2:DisassociateWebACL",
+                "shield:DescribeProtection",
+                "shield:GetSubscriptionState",
+                "shield:DeleteProtection",
+                "shield:CreateProtection",
+                "shield:DescribeSubscription",
+                "shield:CreateSubscription",
+                "shield:DeleteSubscription"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
